@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .basket{
+            width: 200px;
+            height: 200px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7G1pRnCXyxGZDPqZm-fAI281LegutM1ua5w&s');
+            background-size: 100% 100%;
+            position: absolute;
+            left: 44%;
+            top: 30%;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+           background-image: url('https://png.pngtree.com/png-vector/20230131/ourmid/pngtree-basketball-png-image_6578466.png');
+           background-size: 100% 100%;
+           animation-name: anime;
+           animation-timing-function: ease-in-out;
+           animation-duration: 10s;
+           animation-iteration-count: 1;
+           position: relative;
+        }
+        @keyframes anime{
+            0%{left: 0px;}
+            12%{left: 1400px;top: 0px;}
+            25%{top: 600px;left: 1400px;}
+            37%{left: 0px;top: 600px;}
+            50%{top: 0px; left: 0px}
+            62%{left: 700px; top: 0px;}
+            75%{left: 700px; top: 250px;}
+            87%{left: 700px; top: 0px;}
+            100%{left: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="basket"></div>
+    <div class="ball"></div>
+</body>
+</html>
